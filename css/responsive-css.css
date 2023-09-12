@@ -16,6 +16,13 @@
    h5{
     line-height: 3rem;
    }
+
+   .about-content{
+
+      margin-top: 2rem;
+      display: block;
+      word-break: break-all;
+   }
     
 }
 

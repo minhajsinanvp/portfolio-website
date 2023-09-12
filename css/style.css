@@ -53,6 +53,7 @@ body {
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     /* color: rgb(206, 255, 11); */
 
+    color: black;
     font-size: 1.5rem;
 
 }
@@ -102,7 +103,7 @@ body {
 /* Home Section */
 
 
-#home{
+.home-class{
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -110,6 +111,15 @@ body {
     align-items: center;
 
 
+
+}
+
+.home-class-small{
+    display: flex;
+    height: 60vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -132,7 +142,8 @@ body {
 /* About section */
 
 #about{
-    height: 0px;
+    height: fit-content
+
 
     /* height: 10vh; */
 }
@@ -164,4 +175,42 @@ body {
 
 .about-content{
     word-break: break-all;
+}
+
+
+
+
+
+
+
+/* service section */
+
+#service .card {
+    background-color:transparent;
+    color: rgb(144, 230, 14);
+    border-radius: 10px !important;
+    transition: transform 1s ease-in-out;
+    padding: 2rem;
+    min-height: 450px;
+}
+
+.card:hover{ 
+
+    border: 2px solid;
+   color: greenyellow !important;
+    transform: scale(1.1);
+}
+
+.card-heading{
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.card-content{
+    word-break: break-all;
+}
+
+#service img{
+  
+    object-fit: cover;
 }
