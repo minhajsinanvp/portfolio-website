@@ -47,14 +47,15 @@ body {
     transition: font-size .5s;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: #067c82;
+    color: rgb(28, 3, 62);
+
     font-size: 1.5rem;
 
 }
 .nav-link:hover{
 
     font-size: 1.5rem;
-    color: #067c82;
+    color: rgb(28, 3, 62)
     
 }
 
@@ -64,6 +65,10 @@ body {
 
 .nav-item{
     margin: 0 0.5rem;
+}
+
+.offcanvas-body{
+    background-color: #016A70;
 }
 
 .btn-close{
