@@ -1,3 +1,7 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+
+
 
 *{
     box-sizing: border-box;
@@ -5,14 +9,6 @@
     padding: 0;
 
 }
-
-/* :root{
-
-     --primary-color: #016A70;
-    --secondary-color: #053B50;
-    --bg-white: white;
-    --gradient: linear-gradient(to right,#016A70 0%,  #053B50 100% ) 
-} */
 
 
 
@@ -24,6 +20,7 @@ body {
     background-size: cover;
     object-fit: cover;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -32,8 +29,15 @@ body {
 
 
 /* navbar section */
+
+
+
+.navbar {
+    background-color: transparent !important;
+}
+
 .nav-body{
-    background-color:#016A70 !important;
+    background-color:#152e58 !important;
 }
 
 
@@ -47,7 +51,7 @@ body {
     transition: font-size .5s;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
-    color: rgb(28, 3, 62);
+    /* color: rgb(206, 255, 11); */
 
     font-size: 1.5rem;
 
@@ -55,7 +59,8 @@ body {
 .nav-link:hover{
 
     font-size: 1.5rem;
-    color: rgb(28, 3, 62)
+    color: rgb(141, 141, 140);
+    
     
 }
 
@@ -67,18 +72,20 @@ body {
     margin: 0 0.5rem;
 }
 
-.offcanvas-body{
-    background-color: #016A70;
-}
+
+
+
 
 .btn-close{
     --bs-btn-close-color: white !important;
 }
+
+
 .header-wrapper img{
     display: flex;
     position: relative;
     width: 30%;
-    height: fit-content;
+    height: fit-conten;
     border: 2px solid;
 }
 .offcanvas-title {
@@ -111,4 +118,50 @@ body {
     height: 15rem;
     object-fit: cover;
     
+}
+
+#home img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/* About section */
+
+#about{
+    height: 0px;
+
+    /* height: 10vh; */
+}
+
+#about .container{
+    transition:background-color 1.5s ease-in-out, color 1s ;
+}
+
+
+#about .container:hover{
+    
+
+
+    
+}
+#about img{
+
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+    transition-duration: 1s;
+
+}
+
+#about img:hover{
+    transform: scale(1.1);
+}
+
+
+.about-content{
+    word-break: break-all;
 }

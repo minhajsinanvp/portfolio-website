@@ -20,3 +20,10 @@
 }
 
 
+@media (min-width:991px){
+   .list-group-item{
+      border: none;
+   height: fit-content;
+
+   }
+}
