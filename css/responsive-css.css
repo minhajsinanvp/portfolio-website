@@ -28,7 +28,7 @@
    .card{
       word-wrap: break-word;
       min-height:fit-content !important;
-      padding: 0 !important;
+      padding: 10px !important;
       margin: 0 !important;
       opacity: 1;
    }
@@ -40,6 +40,13 @@
       word-break: break-all;
       text-align: center !important;
   }
+
+  .card:hover{ 
+
+   border: 2px solid;
+  color: greenyellow !important;
+   transform: scale(1.05);
+}
 
   .contact{
 
