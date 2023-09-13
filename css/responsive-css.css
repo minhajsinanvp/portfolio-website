@@ -27,23 +27,39 @@
 
    .card{
       word-wrap: break-word;
-      max-height:fit-content !important;
+      min-height:fit-content !important;
       padding: 0 !important;
       margin: 0 !important;
       opacity: 1;
    }
 
+   
+  
+  .card-content{
+      word-spacing: 6px;
+      word-break: break-all;
+      text-align: center !important;
+  }
 
+  .contact{
+
+      min-height: 17rem;
+      
+   
+  }
 
    form{
       margin-top: 1px !important;
-      width:fit-content;
    }
 
 
 .card-body{
    margin: 0 !important;
    
+}
+
+.submit-btn{
+   margin-top: 20px;
 }
 
 
