@@ -1,12 +1,49 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 
+/* Animation Seciton */
+@keyframes moveLeft {
+    0% {
+        transform: translateY(100%);
+        background-color: transparent;
+    }
+    100% {
+        transform: translateX(0%); /* Move to the right of the viewport */
+        background-color: transparent;
+    }
+}
+
+/* Add this CSS code to your existing stylesheet */
+@keyframes fade-in {
+    0% {
+        opacity: 0; /* Start with full transparency (invisible) */
+    }
+    25% {
+        opacity: 0.25; /* Start with full transparency (invisible) */
+    }
+    50% {
+        opacity: 0.5; /* Start with full transparency (invisible) */
+    }
+    75% {
+        opacity: 0.75; /* Start with full transparency (invisible) */
+    }
+    100% {
+        opacity: 1; /* End with full visibility (visible) */
+    }
+}
 
 
+
+
+
+
+
+/* common styles */
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 
 }
 
@@ -21,11 +58,23 @@ body {
     object-fit: cover;
     color: white;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 
 
+.section-headings{
+    color: greenyellow;
+    cursor: pointer;
+    transition: transform 1s ;
+    
+}
 
+
+.section-headings:hover{
+    text-decoration: underline;
+    transform: scale(1.1);
+}
 
 
 /* navbar section */
@@ -53,7 +102,7 @@ body {
 .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
     /* color: rgb(206, 255, 11); */
 
-    color: black;
+    /* color: black; */
     font-size: 1.5rem;
 
 }
@@ -78,7 +127,12 @@ body {
 
 
 .btn-close{
-    --bs-btn-close-color: white !important;
+    background-color: white;
+}
+
+
+.btn-close:focus{
+    border: none;
 }
 
 
@@ -174,6 +228,9 @@ body {
 
 
 .about-content{
+    /* word-wrap: break-word; */
+    /* width: max-content; */
+    word-spacing: 1px;
     word-break: break-all;
 }
 
@@ -187,11 +244,11 @@ body {
 
 #service .card {
     background-color:transparent;
-    color: rgb(144, 230, 14);
+    color: rgb(251, 255, 246);
     border-radius: 10px !important;
     transition: transform 1s ease-in-out;
     padding: 2rem;
-    min-height: 450px;
+    min-height: 420px;
 }
 
 .card:hover{ 
@@ -202,15 +259,60 @@ body {
 }
 
 .card-heading{
+    word-wrap: break-word;
     font-size: xx-large;
     font-weight: 800;
 }
 
 .card-content{
-    word-break: break-all;
+    /* word-spacing: 2px; */
+    word-wrap: break-all;
+    text-align: center;
 }
 
 #service img{
   
     object-fit: cover;
 }
+
+
+
+
+/* Apply the animation to the service cards */
+.service-card {
+   
+    animation: fade-in 2.5s ease-in-out; 
+    
+    
+}
+
+
+
+
+
+  
+
+
+
+/*contact section  */
+
+
+.contact-input{
+    border: 2px solid rgb(117, 103, 103);
+}
+
+
+.contact-input:focus{
+    border: 2px solid rgb(7, 7, 7);
+}
+
+
+.invalid-feedback{
+    color: rgb(157, 144, 144);
+}
+
+
+
+
+/* footer section */
+
