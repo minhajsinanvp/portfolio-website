@@ -104,7 +104,7 @@ function handleScroll() {
             card.style.opacity = '1';
         } else {
             card.style.animationPlayState = 'paused';
-            card.style.opacity = '0';
+            card.style.opacity = '0.2';
         }
     });
 }

@@ -25,10 +25,22 @@
       /* width: 22.5rem; */
    }
 
+   .card{
+      word-wrap: break-word;
+      max-height:fit-content !important;
+      padding: 0 !important;
+      margin: 0 !important;
+      opacity: 1;
+   }
+
+
 
    form{
       margin-top: 1px !important;
    }
+
+
+
     
 }
 
