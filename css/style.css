@@ -299,20 +299,44 @@ body {
 
 .contact-input{
     border: 2px solid rgb(117, 103, 103);
+    color: white;
 }
 
 
 .contact-input:focus{
     border: 2px solid rgb(7, 7, 7);
+    
 }
 
 
 .invalid-feedback{
-    color: rgb(157, 144, 144);
+    color: rgb(208, 128, 128);
 }
 
 
+.contact{
+   
+    /* width: 50vw; */
+    margin:5%;
+    margin-top: 10vh;
+    height: 20vh;
+    min-height: 20vh;
+    background-color: #352F44;
+    /* opacity: .5; */
+    border-radius: 20px ;
+    
+}
+
+form{
+    margin-top: 50px !important;
+}
 
 
 /* footer section */
+
+
+.footer-section{
+    background-color: #2c4570;
+    min-height: 200px;
+}
 
