@@ -37,7 +37,16 @@
 
    form{
       margin-top: 1px !important;
+      width:fit-content;
    }
+
+
+.card-body{
+   margin: 0 !important;
+   
+}
+
+
 
 
 

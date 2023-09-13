@@ -248,7 +248,7 @@ body {
     border-radius: 10px !important;
     transition: transform 1s ease-in-out;
     padding: 2rem;
-    min-height: 420px;
+    max-height: 30rem !important;
 }
 
 .card:hover{ 
@@ -270,10 +270,7 @@ body {
     text-align: center;
 }
 
-#service img{
-  
-    object-fit: cover;
-}
+
 
 
 
@@ -284,6 +281,12 @@ body {
     animation: fade-in 2.5s ease-in-out; 
     
     
+}
+
+
+.card-body{
+    margin: 0 !important;
+
 }
 
 
